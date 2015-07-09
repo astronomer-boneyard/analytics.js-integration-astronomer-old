@@ -1,0 +1,17 @@
+{
+  "name": "analytics.js-integration-astronomer",
+  "repo": "astronomer/analytics.js-integration-astronomer",
+  "description": "The Astronomer analytics.js integration.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "segmentio/analytics.js-integration": "^1.0.0",
+    "ndhoule/foldl": "^1.0.3"
+  },
+  "development": {
+    "segmentio/analytics.js-core": "^2.10.0",
+    "segmentio/clear-env": "0.2.x",
+    "segmentio/analytics.js-integration-tester": "1.4.x"
+  }
+}
