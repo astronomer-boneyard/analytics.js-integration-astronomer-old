@@ -9,8 +9,7 @@
     "segmentio/analytics.js-integration": "^1.0.0",
     "ndhoule/foldl": "^1.0.3",
     "visionmedia/superagent": "^1.2.0",
-    "johntron/superagent-prefix": "*",
-    "thenables/thenify": "*"
+    "johntron/superagent-prefix": "*"
   },
   "development": {
     "segmentio/analytics.js-core": "^2.10.0",
