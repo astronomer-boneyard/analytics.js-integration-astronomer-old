@@ -38,7 +38,7 @@ node_modules: package.json $(wildcard node_modules/*/package.json)
 
 # Remove temporary files and build artifacts.
 clean:
-	rm -rf build.js
+	rm -rf build.js astronomer-analytics.js
 .PHONY: clean
 
 # Remove temporary files, build artifacts, and vendor dependencies.
@@ -57,6 +57,13 @@ build.js: node_modules component.json $(SRCS) $(TESTS)
 # Build shortcut.
 build: build.js
 .DEFAULT_GOAL = build
+
+# Astronomer shortcuts.
+astronomer-analytics.js: node_modules component.json $(SRCS)
+	@$(DUO) --stdout --development $(SRCS) > $@
+
+ast: astronomer-analytics.js
+.DEFAULT_GOAL = ast
 
 #
 # Test tasks.
