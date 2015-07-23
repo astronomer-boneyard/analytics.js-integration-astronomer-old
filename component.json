@@ -8,6 +8,7 @@
   "dependencies": {
     "segmentio/analytics.js-integration": "^1.0.0",
     "ndhoule/foldl": "^1.0.3",
+    "gjohnson/uuid": "0.0.1",
     "visionmedia/superagent": "^1.2.0",
     "johntron/superagent-prefix": "*",
     "caolan/async": "*"
